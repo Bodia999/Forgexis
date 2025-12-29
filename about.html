@@ -150,13 +150,49 @@
   color: var(--accent);
 }
     }
+
+    .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(11,11,11,0.95);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
   </style>
 </head>
 <body>
   <nav class="top-nav">
   <div class="nav-inner">
-    <div class="nav-logo">Forgexis</div>
-    <div class="nav-links">
+    <div class="nav-logo">Forgexis<button class="menu-toggle" onclick="toggleMenu()">☰</button></div>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Главная</a>
       <a href="about.html" class="active">О проекте</a>
       <a href="contact.html">Контакты</a>
@@ -200,5 +236,11 @@ Forgexis имеет доступ к WI-FI и Bluetooth, множество пи�
 
   <footer>Forgexis © 2025</footer>
 </main>
+  <script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
