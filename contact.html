@@ -161,6 +161,48 @@
   }
 }
 
+    /* === Contact cards === */
+.contacts {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-card {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(47,129,247,0.18);
+}
+
+.contact-card h3 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+    /* === Reveal animation === */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s ease forwards;
+}
+
+.reveal.delay-1 { animation-delay: 0.15s; }
+.reveal.delay-2 { animation-delay: 0.3s; }
+.reveal.delay-3 { animation-delay: 0.45s; }
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
 </head>
 
@@ -182,28 +224,24 @@
 <main>
   <h1>Связаться</h1>
 
-  <div class="block">
-    <h2>Email для связи</h2>
-    <p>
-      <a href="mailto:forgexis25@gmail.com">forgexis25@gmail.com</a>
-    </p>
+  <section class="contacts reveal">
+  <div class="contact-card">
+    <h3>Email</h3>
+    <p>forgexis25@gmail.com</p>
   </div>
 
-  <div class="block">
-    <h2>Telegram</h2>
-    <p>
-      Официальный канал проекта:<br>
-      <a href="https://t.me/Forgexis">t.me/Forgexis</a>
-    </p>
+  <div class="contact-card">
+    <h3>Telegram</h3>
+    <a href="https://t.me/Forgexis">t.me/Forgexis</a>
   </div>
 
-  <div class="block">
-    <h2>Спонсоры</h2>
-    <p>
-      <a href="https://t.me/giveaway_cryptobo">Sponsor 1</a><br>
-      <a href="https://t.me/xLegaIT">Sponsor 2</a>
-    </p>
+  <div class="contact-card">
+    <h3>Спонсоры</h3>
+    <a href="https://t.me/giveaway_cryptobo">Sponsor 1</a><br>
+    <a href="https://t.me/xLegaIT">Sponsor 2</a>
   </div>
+</section>
+
 
   <footer>© Forgexis</footer>
 </main>
