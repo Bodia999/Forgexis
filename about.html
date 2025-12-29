@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgexis — О проекте</title>
+  <meta name="description" content="Официальная информация о проекте Forgexis, его целях и контактах.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <rect width='100' height='100' rx='18' fill='%232f81f7'/>
+  <text x='50' y='68' font-size='64' text-anchor='middle' fill='white'>F</text>
+</svg>">
+
+  <style>
+    :root {
+      --accent: #2f81f7;
+      --bg-dark: #0b0b0b;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    main {
+      max-width: 600px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px;
+      backdrop-filter: blur(6px);
+      animation: fadeUp 0.8s ease-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 500;
+      margin-bottom: 6px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 2px;
+      margin: 6px auto 14px;
+      background: var(--accent);
+      border-radius: 2px;
+      opacity: 0.8;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 15px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .tg-button {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #4da3ff, #1e7fff);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 30px rgba(47,129,247,0.25);
+    }
+
+    .tg-button:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 16px 45px rgba(47,129,247,0.45); }
+    .tg-button:active { transform: translateY(0) scale(0.98); box-shadow: 0 8px 20px rgba(47,129,247,0.25); }
+
+    footer { margin-top: 32px; font-size: 13px; opacity: 0.4; text-align: center; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Forgexis</h1>
+  
+  <section>
+    <h2>О проекте</h2>
+    <p>
+      Forgexis — это независимый технологический проект, который создаёт инновационные решения и инструменты для экспериментов и разработок. Проект развивается открыто и публикует все обновления исключительно в Telegram.
+    </p>
+  </section>
+
+  <section>
+    <h2>Контакты</h2>
+    <p>
+      Email для связи: <a href="mailto:contact@forgexis.com">contact@forgexis.com</a><br>
+      Telegram-канал: <a href="https://t.me/Forgexis">t.me/Forgexis</a>
+    </p>
+    <a class="tg-button" href="https://t.me/Forgexis">Перейти в Telegram</a>
+  </section>
+
+  <footer>© Forgexis</footer>
+</main>
+</body>
+</html>
