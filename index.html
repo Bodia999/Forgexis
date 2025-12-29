@@ -3,30 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Forgexis — официальный сайт</title>
-  <meta name="description" content="Официальный сайт проекта Forgexis">
+  <meta name="description" content="Официальный сайт проекта Forgexis. Все ссылки и новости публикуются в Telegram.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    :root {
+      --accent: #4da3ff;
+      --bg-dark: #0b0b0b;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #0b0b0b;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 50% -200px, rgba(77,163,255,0.15), transparent),
+        var(--bg-dark);
       color: #ffffff;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
+
     main {
-      padding: 80px 20px;
+      max-width: 520px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 32px;
+      text-align: center;
+      backdrop-filter: blur(6px);
     }
+
     h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 42px;
+      margin: 0 0 12px;
+      letter-spacing: 0.5px;
     }
-    p {
-      opacity: 0.8;
+
+    .subtitle {
       font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 32px;
     }
-    a {
-      color: #4da3ff;
-      ;
+
+    .info {
+      font-size: 15px;
+      opacity: 0.75;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .tg-button {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #4da3ff, #1e7fff);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 30px rgba(77,163,255,0.25);
+    }
+
+    .tg-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(77,163,255,0.35);
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      opacity: 0.4;
     }
   </style>
 </head>
@@ -34,13 +91,20 @@
 
 <main>
   <h1>Forgexis</h1>
-  <p>Официальный сайт проекта<br>Все ссылки и новости публикуются в Telegram.</p>
-  
-  <p>
-Официальный Telegram-канал проекта:<br>
-<a href="https://t.me/Forgexis">t.me/Forgexis</a>
-</p>
+  <div class="subtitle">Официальный сайт проекта</div>
 
+  <div class="info">
+    Все официальные ссылки, обновления и новости<br>
+    публикуются в Telegram-канале проекта.
+  </div>
+
+  <a class="tg-button" href="https://t.me/Forgexis">
+    Перейти в Telegram
+  </a>
+
+  <footer>
+    © Forgexis
+  </footer>
 </main>
 
 </body>
