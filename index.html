@@ -273,6 +273,71 @@ main {
   }
 }
 
+
+
+    
+    .hero {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero-sub {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 20px rgba(47,129,247,0.5);
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: rgba(255,255,255,0.04);
+}
+
+.btn.secondary:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+}
+
+    .status {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #4ade80;
+}
+
   </style>
 </head>
 <body>
@@ -292,6 +357,24 @@ main {
 
 
   <main>
+
+    <section class="hero">
+  <h1 class="hero-title">Forgexis</h1>
+  <p class="hero-sub">
+    Automation • Tools • Control
+  </p>
+
+  <div class="hero-buttons">
+    <a href="https://t.me/Forgexis" target="_blank" class="btn primary">Telegram</a>
+    <a href="socials.html" class="btn secondary">Соцсети</a>
+  </div>
+</section>
+
+    <div class="status">
+  ● System online
+</div>
+    
+    
   <div class="logo">
   <h1 class="reveal">Forgexis</h1>
   </div>
