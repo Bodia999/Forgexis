@@ -190,6 +190,17 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+   .more {
+  text-decoration: none;       /* убираем подчеркивание */
+  color: var(--accent);        /* основной цвет */
+  transition: color 0.2s ease, text-decoration 0.2s ease; /* плавность */
+}
+
+.more:hover {
+  text-decoration: underline;  /* подчеркивание при hover */
+  color: lighten(var(--accent), 5%); /* чуть светлее, если поддерживается CSS */
+}
 </style>
 </head>
 <body>
