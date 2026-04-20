@@ -92,11 +92,7 @@
 
   footer { margin-top: 32px; font-size: 13px; opacity: 0.4; text-align: center; }
 
-     @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
+     @keyframes revealUp {
   to {
     opacity: 1;
     transform: translateY(0);
@@ -214,6 +210,9 @@ main {
   transition: color 0.2s ease, text-decoration 0.2s ease; /* плавность */
 }
 
+  a.more {
+  text-decoration: none;
+}
 
 .more:hover {
   filter: brightness(1.2);
