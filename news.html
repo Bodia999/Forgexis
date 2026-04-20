@@ -201,10 +201,20 @@
   text-decoration: none;       /* убираем подчеркивание */
   color: var(--accent);        /* основной цвет */
   transition: color 0.2s ease, text-decoration 0.2s ease; /* плавность */
+  
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin: 10px auto 0;
+  background: var(--accent);
+  border-radius: 2px;
+  opacity: 0.8;
 }
 
+
 .more:hover {
-  text-decoration: underline;  /* подчеркивание при hover */
+ /* text-decoration: underline;  /* подчеркивание при hover */
   color: lighten(var(--accent), 5%); /* чуть светлее, если поддерживается CSS */
 }
 </style>
