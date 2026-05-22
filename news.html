@@ -229,6 +229,13 @@ main {
   filter: brightness(1.7);
 }
 
+  .code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    background: #111;
+    color: #0f0;
+    padding: 10px;
+}
   
 </style>
 </head>
@@ -258,7 +265,7 @@ main {
 
 <div class="news-card">
   <img src="update.jpg" class="news-img">
-    <div class="news-title">Обновление Версии🛠️</div>
+    <div class="news-title">Обновление версии🛠️</div>
     <div class="news-date">22.05.2026</div>
 
     <div class="news-text">
@@ -267,20 +274,24 @@ main {
  Сегодняшнее обновление:</br></br>
 
 Добавлена функция анимации сообщений через:</br></br>
-
+<div class="code">
 editMessage()
-
+</div></br></br>
 Используемые переменные:</br>
+<div class="code">
 int msgId</br>
-String newText</br></br>
+String newText
+    </div></br></br>
 
 Пример использования в void:</br></br>
 
-String url =
+      <div class="code">
+    String url =
     "https://api.telegram.org/bot" + botToken +
     "/editMessageText?chat_id=" + allowed_chat_id +
     "&message_id=" + String(msgId) +
-    "&text=" + newText;</br></br>
+    "&text=" + newText;
+</div></br></br>
 
 Теперь бот может изменять уже отправленные сообщения, создавая эффект анимации и обновления текста в реальном времени.
     </div></br>
@@ -290,7 +301,7 @@ String url =
   
 <div class="news-card">
   <img src="update.jpg" class="news-img">
-    <div class="news-title">Обновление кода</div>
+    <div class="news-title">Обновление версии🛠️</div>
     <div class="news-date">18.05.2026</div>
 
     <div class="news-text">
