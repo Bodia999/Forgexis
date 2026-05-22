@@ -263,10 +263,48 @@ main {
 
 
 
+
+  
+
 <div class="news-card">
   <img src="update.jpg" class="news-img">
     <div class="news-title">Обновление версии🛠️</div>
-    <div class="news-date">22.05.2026</div>
+    <div class="news-date">21.05.2026</div>
+
+    <div class="news-text">
+      Forgexis V2.1.4 → V2.1.5.1</br></br>
+
+Что нового:</br></br>
+
+Добавлен вывод состояния Forgexis по команде в телеграм.</br></br></br>
+
+
+Используя:</br></br>
+<div class="code">
+int cpuLoad = getCpuLoad();
+  int freeHeap = esp_get_free_heap_size();
+  float tempC = temperatureRead();
+  long rssi = WiFi.RSSI();
+  int cpuFreq = getCpuFrequencyMhz();
+  unsigned long uptime = millis() / 1000;</div></br></br>
+
+И:</br></br>
+<div class="code">
+sendMessage</div></br></br>
+
+Можно вывести текущее состояние устройства.</br></br>
+
+Совместив эту функцию с editMessage можно получить вывод состояния с обновлением в реальном времени.
+    </div></br>
+    <a href="https://t.me/Forgexis" class="more">𝕋𝕖𝕝𝕖𝕘𝕣𝕒𝕞</a> • <a href="https://t.me/boost/Forgexis" class="more">𝔹𝕠𝕠𝕤𝕥</a> • <a href="https://t.me/xLegaIT" class="more">𝕀𝕋</a> • <a href="https://t.me/+4Qqpy-gYOtBjNzFi" class="more">𝕊𝕡𝕠𝕟𝕤𝕠𝕣</a> • <a https://t.me/Forgexis_support_details" class="more">𝔻𝕠𝕟𝕒𝕥𝕖</a>                                                       
+  </div>
+
+  
+  
+<div class="news-card">
+  <img src="update.jpg" class="news-img">
+    <div class="news-title">Обновление версии🛠️</div>
+    <div class="news-date">19.05.2026</div>
 
     <div class="news-text">
     ⇧ Forgexis V2.1.3 → V2.1.4</br></br>
@@ -368,14 +406,14 @@ String newText
     <div class="news-date">22.04.2026</div>
 
     <div class="news-text">
-      
+      <div class="code">
 Wire.h</br>
 WiFi.h</br>
 HTTPClient.h</br>
 ArduinoJson.h</br>
 Adafruit_GFX.h</br>
 Adafruit_SH110X.h</br>
-Adafruit_NeoPixel.h</br></br>
+Adafruit_NeoPixel.h</div></br></br>
 
 ⍰ Для чего они нужны:</br></br>
 
