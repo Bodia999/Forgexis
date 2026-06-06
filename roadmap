@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="icon" href="favicon.ico">
+
+  
+<meta name="msvalidate.01" content="0DBC115E99819C9DB84381D95D332ADB" />
+  <meta charset="UTF-8">
+  <title>Forgexis official website</title>
+  <meta name="description" content="Официальный сайт проекта Forgexis. Для получения полной информации перейдите в Telegram">
+  <meta name="keywords" content="Forgexis, Forgexis project, Forgexis Telegram, официальный проект Forgexis, forgexis, arduino, ESP32, t.me/Forgexis, форгексис, форджексис, forgexis youtube, forgexis tiktok, forgex, форгексис телеграм, форджексис телеграм, форджексис тикток, bodia999, ForgeX, Форгексис, форгексис телеграм, Telegram, телеграм, diy project, telegram chanel, development, электроника, проект, самоделки, робототехника">
+<meta name="author" content="Forgexis">
+<meta property="og:title" content="Forgexis — официальный сайт">
+<meta property="og:description" content="Официальный сайт проекта Forgexis. Все обновления публикуются в Telegram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Forgexis.github.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+
+
+
+  <style>
+    :root {
+      --accent: #2f81f7;
+      --bg-dark: #0b0b0b;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 50% -200px, rgba(77,163,255,0.15), transparent),
+        var(--bg-dark);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      padding-top: 90px;
+
+    }
+
+    main {
+      max-width: 520px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 32px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+
+    .info {
+      font-size: 15px;
+      opacity: 0.75;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .tg-button {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #4da3ff, #1e7fff);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 30px rgba(77,163,255,0.25);
+    }
+
+    .tg-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 45px rgba(47,129,247,0.45);
+}
+
+    .tg-button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 8px 20px rgba(47,129,247,0.25);
+}
+
+
+
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      opacity: 0.4;
+    }
+
+    section {
+  margin-top: 36px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+    section h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin: 10px auto 0;
+  background: var(--accent);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+
+
+section p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+    .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.logo-mark {
+  color: var(--accent);
+  font-size: 26px;
+}
+
+.logo-text {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+    @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 11, 11, 0.65);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+.nav-links a {
+  margin-left: 22px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-links a.active {
+  opacity: 1;
+  color: var(--accent);
+}
+
+    .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(11,11,11,0.95);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+    /* === Reveal animation === */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s ease forwards;
+}
+
+.reveal.delay-1 { animation-delay: 0.15s; }
+.reveal.delay-2 { animation-delay: 0.3s; }
+.reveal.delay-3 { animation-delay: 0.45s; }
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .status {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #4ade80;
+}
+
+    .more {
+  text-decoration: none;       /* убираем подчеркивание */
+  color: var(--accent);        /* основной цвет */
+  transition: color 0.2s ease, text-decoration 0.2s ease; /* плавность */
+}
+
+.more:hover {
+  filter: brightness(1.7);
+}
+
+                                  .roadmap-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-3px);
+}
+                                  
+  </style>
+</head>
+<body>
+  <meta name="google-site-verification" content="OGv_L5ahAulAVcq0RdaYV2MOr2pwnZeNkSVM6nKRsCE" />
+<nav class="top-nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Forgexis<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="contact.html">Контакты</a>
+      <a href="socials.html">Соцсети</a>
+      <a href="news.html">Новости</a>
+      <a href="roadmap.html" class="active">Roadmap</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main>
+
+<main>
+
+  <section class="hero">
+    <h1 class="hero-title">Roadmap</h1>
+    <p class="hero-sub">
+      Development Progress & Future Plans
+    </p>
+  </section>
+
+  <div class="status">
+    ● Project Active
+  </div>
+
+  <div class="subtitle reveal delay-1">
+    Текущее состояние развития Forgexis
+  </div>
+
+  <section class="info reveal delay-2">
+
+```
+<h2>Реализовано</h2>
+
+<p>
+  ✅ Официальный сайт проекта<br>
+  ✅ Telegram-канал<br>
+  ✅ Проекты на Arduino и ESP32<br>
+  ✅ Система управления устройствами<br>
+  ✅ Публикация новостей и обновлений
+</p>
+```
+
+  </section>
+
+  <section class="info reveal delay-2">
+
+```
+<h2>В разработке</h2>
+
+<p>
+  ⚙ Новые проекты на ESP32<br>
+  ⚙ Расширение веб-интерфейсов<br>
+  ⚙ Улучшение документации<br>
+  ⚙ Интеграция новых модулей управления
+</p>
+```
+
+  </section>
+
+  <section class="info reveal delay-3">
+
+```
+<h2>Запланировано</h2>
+
+<p>
+  ○ Документация проекта<br>
+  ○ Демонстрационные панели управления<br>
+  ○ Каталог проектов<br>
+  ○ Система загрузок и прошивок<br>
+  ○ Дополнительные инструменты автоматизации
+</p>
+```
+
+  </section>
+
+  <footer>
+    Forgexis © The project was created in 2024
+  </footer>
+
+</main>
+
+                                  
+</main>
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
